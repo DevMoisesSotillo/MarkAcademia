@@ -16,7 +16,7 @@ const audioTempoFinalizado = new Audio('./sons/beep.mp3')
 const iniciarOuPausarBtIcone = document.querySelector('.app__card-primary-butto-icon')
 
 
-let tempoDecorridoEmSegundos = 1000
+let tempoDecorridoEmSegundos = 10
 let intervaloId = null
 
 musica.loop = true
@@ -30,7 +30,7 @@ musicaFocoInput.addEventListener('change', () => {
 })
 
 focobt.addEventListener('click' , () => {
-    tempoDecorridoEmSegundos = 1000
+    tempoDecorridoEmSegundos = 10
     alterarContexto('foco')
     focobt.classList.add('active')
 })
